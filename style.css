@@ -1,0 +1,141 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #221460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+body h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+body span {
+    color: #da4906;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    background: rgba(248, 246, 246, 0.2);
+    box-shadow: 2px 2px 2px rgba(0,0,0.0.3);
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.container h1{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    
+}
+
+.input_box{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.input_box input{
+    padding: 10px 20px;
+    width: 60%;
+    background: #EDEEF0;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 14px;
+    
+}
+
+.input_box button {
+	padding: 10px 20px;
+	width: 25%;
+	background: #F47F7B;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	position: absolute;
+	top: 0px;
+	left: 250px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+.input_box button:hover{
+    background: tomato;
+}
+
+.container ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: rgba(134, 206, 235, 0.2);
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    display: none;
+    
+}
+
+.container ul li {
+	text-transform: capitalize;
+	font-size: 18px;
+	color: rgb(248, 240, 240);
+	letter-spacing: 1px;
+	border: 1px solid gray;
+	width: 95%;
+	padding: 8px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.1);
+	text-align: center;
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container ul li.done{
+    background: greenyellow;
+    color: red;
+    cursor: pointer;
+}
+
+.container ul li button {
+	padding: 5px 14px;
+	width: 19%;
+	background: #F47F7B;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.container ul li button:hover{
+    background: red;
+} 
